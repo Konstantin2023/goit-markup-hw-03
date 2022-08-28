@@ -181,6 +181,18 @@ color: var(--brand-color2);
 
 }
 
+.button-list {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  gap: 8px;
+justify-content: center;
+}
+ 
+.section-button-list {
+width: 1117px;
+}
+
 .list-contacts,
 .list-heder {
   gap: 50px;
@@ -579,4 +591,16 @@ line-height: calc(30/16);
 letter-spacing: 0.03em;
 
 color: #757575;
+}
+
+.portfolio-block {
+  width: 1170px;
+  height: 1360px;
+  display: flex;
+}
+
+.list-portfolio-block {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
 }
