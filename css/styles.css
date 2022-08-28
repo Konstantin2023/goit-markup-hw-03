@@ -1,3 +1,22 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+h1, h2, h3, p, ul {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+ul {
+	list-style: none;
+
+}
+
 :root {
   /* Основний колір тексту */
   --text-cl: #212121;
@@ -25,6 +44,11 @@ display: flex;
 align-items: center;
 text-align: center;
 letter-spacing: 0.06em;
+}
+
+.button {
+  padding-left: 692px;
+  display: flex;
 }
 
 .button-assortment {
@@ -91,7 +115,24 @@ color: var(--brand-color2);
 
   text-decoration: none;
   list-style: none;
+
+  margin-right: 93px;
+
+  display: flex;
+  margin-top: 24px;
+  margin-bottom: 25px;
 }
+
+.header-container {
+  display: flex;
+} 
+
+.header-nav {
+  margin-right: 344px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 
 .link-logo2 {
 font-family: 'Raleway';
@@ -107,6 +148,10 @@ color: var(--brand-color2);
 
   text-decoration: none;
   list-style: none;
+
+  display: block;
+  padding-top: 60px;
+  padding-bottom: 20px;
 }
 
 .link-logo3 {
@@ -122,11 +167,31 @@ color: var(--brand-color2);
 
   text-decoration: none;
   list-style: none;
+
+  display: block;
+    padding-top: 60px;
+  padding-bottom: 20px;
 }
 
 .list {
   text-decoration: none;
   list-style: none;
+  display: flex;
+  gap: 30px;
+
+}
+
+.list-contacts,
+.list-heder {
+  gap: 50px;
+  display: flex;
+}
+
+.list-contacts {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 32px;
+  margin-top: 32px;
 }
 .link:hover,
 .link:focus {
@@ -137,6 +202,40 @@ color: var(--brand-color2);
 .link:active {
   color: var(--brand-color2);
   text-decoration: none;
+}
+
+.section {
+  padding-top: 94px;
+  width: 1170px;
+  height: 386px;
+}
+
+.section-pictures {
+    padding-top: 94px;
+  width: 1170px;
+  height: 480px;
+}
+
+.section-name {
+  width: 1170px;
+  height: 600px;
+}
+
+.container-name {
+  width: 1170px;
+  height: 600px;
+}
+
+.section-qualities {
+  width: 1170px;
+  height: 98px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section-people {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .link-studio {
@@ -221,6 +320,7 @@ color: var(--text-cl);
 
   cursor: pointer;
   text-decoration: none;
+
 }
 
 .link-contacts:hover,
@@ -242,6 +342,7 @@ color: var(--text-cl);
     letter-spacing: 0.02em;
 
     color: #757575;
+
 }
 
 .link-email:hover,
@@ -276,6 +377,8 @@ color: #757575;
 
 .section-name {
 background-color: var(--brand-color);
+width: 1170px;
+height: 600px;
 }
 
 /* Ефективні рішення для вашого бізнесу */
@@ -292,6 +395,11 @@ letter-spacing: 0.06em;
 text-transform: uppercase;
 
 color: #FFFFFF;
+
+padding-top: 200px;
+padding-right: 230px;
+padding-bottom: 30px;
+padding-left: 230px;
 }
 
 /* Особливості */
@@ -320,6 +428,8 @@ line-height: calc(24/14);
 letter-spacing: 0.03em;
 
 color: #757575;
+
+padding-top: 10px;
 }
 
 /* Чим ми займаємося */
@@ -334,6 +444,8 @@ text-align: center;
 letter-spacing: 0.03em;
 
 color: #212121;
+
+padding-bottom: 50px;
 }
 
 .headline-people {
@@ -342,10 +454,14 @@ font-style: normal;
 font-weight: 700;
 font-size: 36px;
 line-height: calc(42/36);
-text-align: center;
+/* text-align: center; */
 letter-spacing: 0.03em;
 
 color: #212121;
+
+padding-right: 450px;
+padding-left: 450px;
+padding-bottom: 50px;
 }
 
 .user-name {
@@ -360,6 +476,9 @@ text-align: center;
 letter-spacing: 0.03em;
 
 color: #212121;
+
+padding-top: 30px;
+padding-bottom: 10px;
 }
 
 .profession {
@@ -377,6 +496,8 @@ color: #757575;
 }
 .footer {
   background-color: var(--brand-color);
+
+  width: 1170px;
 }
 
 .link-2 {
@@ -393,6 +514,9 @@ color: #FFFFFF;
 
   text-decoration: none;
   list-style: none;
+
+    display: block;
+  padding-bottom: 9px;
 }
 
 .link-email-2 {
@@ -409,6 +533,9 @@ color: rgba(255, 255, 255, 0.6);
 
   text-decoration: none;
   list-style: none;
+
+      display: block;
+  padding-bottom: 9px;
 }
 
 .link-tel-2 {
@@ -424,6 +551,9 @@ color: rgba(255, 255, 255, 0.6);
 
   text-decoration: none;
   list-style: none;
+
+        display: block;
+  padding-bottom: 60px;
 
 }
 
