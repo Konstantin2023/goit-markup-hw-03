@@ -30,6 +30,15 @@ line-heigt: calc(30 / 18); */
 
 /* button */
 
+.container {
+  width: 1200px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 button {
   background-color: var(--brand-color2);
   color: #ffffff;
@@ -44,6 +53,8 @@ display: flex;
 align-items: center;
 text-align: center;
 letter-spacing: 0.06em;
+
+border: none;
 }
 
 .button {
@@ -119,8 +130,17 @@ color: var(--brand-color2);
   margin-right: 93px;
 
   display: flex;
-  margin-top: 24px;
-  margin-bottom: 25px;
+  align-items: center;
+}
+
+header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+    border-bottom: 1px solid #ECECEC;
+}
+
+.frame {
+  border: 1px solid #ECECEC;
 }
 
 .header-container {
@@ -128,9 +148,8 @@ color: var(--brand-color2);
 } 
 
 .header-nav {
-  margin-right: 344px;
-  padding-top: 32px;
-  padding-bottom: 32px;
+display: flex;
+align-items: center;
 }
 
 
@@ -151,7 +170,7 @@ color: var(--brand-color2);
 
   display: block;
   padding-top: 60px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .link-logo3 {
@@ -170,7 +189,7 @@ color: var(--brand-color2);
 
   display: block;
     padding-top: 60px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .list {
@@ -178,32 +197,20 @@ color: var(--brand-color2);
   list-style: none;
   display: flex;
   gap: 30px;
-
-}
-
-.button-list {
-  text-decoration: none;
-  list-style: none;
-  display: flex;
-  gap: 8px;
-justify-content: center;
-}
- 
-.section-button-list {
-width: 1117px;
+  justify-content: center;
 }
 
 .list-contacts,
 .list-heder {
   gap: 50px;
   display: flex;
+  align-items: center;
 }
 
 .list-contacts {
   display: flex;
   gap: 50px;
-  margin-bottom: 32px;
-  margin-top: 32px;
+  margin-left: auto;
 }
 .link:hover,
 .link:focus {
@@ -218,36 +225,46 @@ width: 1117px;
 
 .section {
   padding-top: 94px;
-  width: 1170px;
-  height: 386px;
+  padding-bottom: 94px;
 }
 
 .section-pictures {
-    padding-top: 94px;
-  width: 1170px;
-  height: 480px;
+padding-top: 0;
+}
+
+.our-classes {
+  display: flex;
+  flex-direction: column;
 }
 
 .section-name {
-  width: 1170px;
-  height: 600px;
+padding-bottom: 94px;
 }
 
 .container-name {
-  width: 1170px;
-  height: 600px;
+display: flex;
+flex-direction: column;
+align-items: center;
 }
 
 .section-qualities {
-  width: 1170px;
-  height: 98px;
-  padding-top: 94px;
-  padding-bottom: 94px;
+
+}
+
+.corporate-qualities {
+  display: flex;
 }
 
 .section-people {
   padding-top: 94px;
   padding-bottom: 94px;
+  background-color: #F5F4FA;
+}
+
+.people-team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .link-studio {
@@ -389,8 +406,7 @@ color: #757575;
 
 .section-name {
 background-color: var(--brand-color);
-width: 1170px;
-height: 600px;
+
 }
 
 /* Ефективні рішення для вашого бізнесу */
@@ -408,10 +424,11 @@ text-transform: uppercase;
 
 color: #FFFFFF;
 
-padding-top: 200px;
-padding-right: 230px;
-padding-bottom: 30px;
-padding-left: 230px;
+margin-left: auto;
+margin-right: auto;
+
+display: flex;
+margin-bottom: 30px;
 }
 
 /* Особливості */
@@ -457,7 +474,7 @@ letter-spacing: 0.03em;
 
 color: #212121;
 
-padding-bottom: 50px;
+margin-bottom: 50px;
 }
 
 .headline-people {
@@ -470,10 +487,7 @@ line-height: calc(42/36);
 letter-spacing: 0.03em;
 
 color: #212121;
-
-padding-right: 450px;
-padding-left: 450px;
-padding-bottom: 50px;
+margin-bottom: 50px;
 }
 
 .user-name {
@@ -490,7 +504,7 @@ letter-spacing: 0.03em;
 color: #212121;
 
 padding-top: 30px;
-padding-bottom: 10px;
+margin-bottom: 10px;
 }
 
 .profession {
@@ -505,11 +519,16 @@ letter-spacing: 0.03em;
 
 color: #757575;
 
+padding-bottom: 30px;
+
 }
 .footer {
   background-color: var(--brand-color);
 
-  width: 1170px;
+}
+
+.location {
+margin-bottom: 9px;
 }
 
 .link-2 {
@@ -528,7 +547,11 @@ color: #FFFFFF;
   list-style: none;
 
     display: block;
-  padding-bottom: 9px;
+
+}
+
+.internet-mail {
+margin-bottom: 9px;
 }
 
 .link-email-2 {
@@ -547,7 +570,10 @@ color: rgba(255, 255, 255, 0.6);
   list-style: none;
 
       display: block;
-  padding-bottom: 9px;
+}
+
+.phone-connection {
+margin-bottom: 60px;
 }
 
 .link-tel-2 {
@@ -565,7 +591,7 @@ color: rgba(255, 255, 255, 0.6);
   list-style: none;
 
         display: block;
-  padding-bottom: 60px;
+
 
 }
 
@@ -579,6 +605,9 @@ line-height: calc(36/18);
 letter-spacing: 0.06em;
 
 color: #212121;
+
+padding-top: 20px;
+margin-bottom: 4px;
 }
 
 .text-list-portfolio {
@@ -593,14 +622,31 @@ letter-spacing: 0.03em;
 color: #757575;
 }
 
-.portfolio-block {
+/* .portfolio-block {
   width: 1170px;
   height: 1360px;
   display: flex;
-}
+} */
 
 .list-portfolio-block {
   display: flex;
-  gap: 30px;
+  gap: 27px;
+  flex-wrap: wrap;
+}
+
+.button-list {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  gap: 8px;
+justify-content: center;
+margin-bottom: 50px;
+}
+
+.section-button-list {
+  width: 1170px;
+  /* height: 1360px; */
+  display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
