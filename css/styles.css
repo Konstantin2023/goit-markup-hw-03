@@ -34,13 +34,17 @@ line-heigt: calc(30 / 18); */
 
 /* button */
 
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-  padding-top: 0px;
-  padding-bottom: 0px;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .section {
@@ -49,6 +53,15 @@ line-heigt: calc(30 / 18); */
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 button {
@@ -196,7 +209,7 @@ color: var(--brand-color2);
   list-style: none;
 
   display: block;
-  padding-top: 60px;
+  margin-top: 60px;
   margin-bottom: 20px;
 }
 
@@ -215,7 +228,7 @@ color: var(--brand-color2);
   list-style: none;
 
   display: block;
-    padding-top: 60px;
+
   margin-bottom: 20px;
 }
 
@@ -251,19 +264,11 @@ color: var(--brand-color2);
 }
 
 .pictures {
-  padding-top: 0px;
-}
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-
-.section,
-.pictures {
-
 padding-top: 0px;
+}
+
+.pictures {
+  padding-top: 0px;
 }
 
 .our-classes {
@@ -273,14 +278,10 @@ padding-top: 0px;
 }
 
 .hero {
-padding-bottom: 94px;
-   padding-top: 200px;
-   text-align: center;
-}
-
-.section,
-.hero {
- 
+background-color: var(--brand-color);
+padding-top: 200px;
+padding-bottom: 200px;
+text-align: center;
 }
 
 .container-name {
@@ -291,13 +292,17 @@ text-align: center;
 padding-top: 94px;
 }
 
+.qualities-item {
+  width: 270px;
+}
+
 .corporate-qualities {
   display: flex;
 }
 
 .section-people {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 0px;
+  padding-bottom: 0px;
   background-color: #F5F4FA;
 }
 
@@ -445,11 +450,6 @@ color: #757575;
 
 /* Шапка */
 
-.hero {
-background-color: var(--brand-color);
-
-}
-
 /* Ефективні рішення для вашого бізнесу */
 
 .main-name {
@@ -500,12 +500,12 @@ letter-spacing: 0.03em;
 
 color: #757575;
 
-padding-top: 10px;
+margin-top: 10px;
 }
 
 /* Чим ми займаємося */
 
-.class-title {
+.section-title {
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 700;
@@ -516,19 +516,6 @@ letter-spacing: 0.03em;
 
 color: #212121;
 
-margin-bottom: 50px;
-}
-
-.headline-people {
-  font-family: 'Roboto';
-font-style: normal;
-font-weight: 700;
-font-size: 36px;
-line-height: calc(42/36);
-/* text-align: center; */
-letter-spacing: 0.03em;
-
-color: #212121;
 margin-bottom: 50px;
 }
 
@@ -648,8 +635,9 @@ letter-spacing: 0.06em;
 
 color: #212121;
 
-padding-top: 20px;
+margin-top: 20px;
 margin-bottom: 4px;
+padding-left: 24px;
 }
 
 .text-list-portfolio {
@@ -664,6 +652,7 @@ letter-spacing: 0.03em;
 color: #757575;
 
 margin-bottom: 20px;
+padding-left: 24px;
 }
 
 /* .portfolio-block {
@@ -685,13 +674,5 @@ margin-bottom: 20px;
   gap: 8px;
 justify-content: center;
 margin-bottom: 50px;
-padding-top: 94px;
 }
 
-/* .section-button-list {
-  width: 1170px;
-
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-} */
